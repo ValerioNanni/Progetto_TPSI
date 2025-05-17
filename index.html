@@ -39,9 +39,9 @@
             })
             .then(temperature => {
                 const tbody = document.querySelector('#tempTable tbody');
-                utenti.forEach(temp => {
+                utenti.forEach(meteo => {
                     const row = document.createElement('tr');
-                    row.innerHTML = `<td>${temp.giorno}</td><td>${temp.minima}</td><td>${temp.massima}</td><td>${temp.media}</td>`;
+                    row.innerHTML = `<td>${meteo.giorno}</td><td>${meteo.minima}</td><td>${meteo.massima}</td><td>${meteo.media}</td>`;
                     tbody.appendChild(row);
                 });
             })
