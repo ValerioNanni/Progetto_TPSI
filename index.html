@@ -17,7 +17,8 @@
 </head>
 <body>
     <h1 align="center">Tabella temperature nei giorni dal 11/05/2025 al 17/05/2025</h>
-    <p align="center">Qui di seguito trovi una tabella contenente la temperatura minima, massima e media calcolate tra i giorni domenica 11/05/2025 e sabato 17/05/2025 (questi dati sono caricati da un file JSON creato ad hoc per questo progetto)</p>
+    <p align="center">Qui di seguito trovi una tabella contenente la temperatura minima, massima e media registrate a Roma tra i giorni domenica 11/05/2025 e sabato 17/05/2025.</p> 
+        <p>Questi dati sono caricati da un file JSON creato ad hoc per questo progetto, i dati sono stati reperiti tramite l'utilizzo di Copilot che cita come fonti da tali informazioni i siti 3bmeteo.com e it.climate-data.org</p>
     <table id="tempTable">
         <thead>
             <tr><th>Giorno</th><th>Temperatura min (°C)</th><th>Temperatura max (°C)</th><th>Temperatura media (°C)</th></tr>
@@ -27,7 +28,7 @@
     </table>
 
     <script>
-        const url= '';
+        const url= 'https://raw.githubusercontent.com/ValerioNanni/Progetto_TPSI/refs/heads/main/meteo.json';
 
         fetch(url)
             .then(response => {
